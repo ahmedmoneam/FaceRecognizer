@@ -32,9 +32,9 @@ print names
 (images, labels) = [numpy.array(l) for l in [images, labels]]
 
 
-model = cv2.createFisherFaceRecognizer()
-# model = cv2.createEigenFaceRecognizer()
-# model = cv2.createLBPHFaceRecognizer()
+model = cv2.cv.createFisherFaceRecognizer()
+# model = cv2.cv.createEigenFaceRecognizer()
+# model = cv2.cv.createLBPHFaceRecognizer()
 
 
 model.train(images, labels)
