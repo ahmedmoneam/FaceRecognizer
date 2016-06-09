@@ -9,6 +9,6 @@ Usage
 -----
 ```
 python capture.py [name]
-python train.py
+python trainer.py
 python face_recognizer
 ```
