@@ -23,9 +23,9 @@ for (subdirs, dirs, files) in os.walk('att_faces'):
         id += 1
 
 
-model = cv2.createFisherFaceRecognizer()
-# model = cv2.createEigenFaceRecognizer()
-# model = cv2.createLBPHFaceRecognizer()
+model = cv2.cv.createFisherFaceRecognizer()
+# model = cv2.cv.createEigenFaceRecognizer()
+# model = cv2.cv.createLBPHFaceRecognizer()
 
 model.load('face_recognizer_model.xml')
 
