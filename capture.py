@@ -4,10 +4,13 @@ import numpy
 import os
 
 (img_width, img_height) = (112, 92)
-
+basePath = 'att_faces'
 name = sys.argv[1]
-path = os.path.join('att_faces', name)
+path = os.path.join(basePath, name)
 
+if not os.path.exists(basePath):
+    os.makedirs(basePath)
+    
 if not os.path.isdir(path):
     os.mkdir(path)
 
